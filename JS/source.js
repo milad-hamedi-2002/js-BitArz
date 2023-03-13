@@ -14,3 +14,7 @@ const sendRequest = async function(url){
 sendRequest(url)
   .then(data => console.log(data))
   .catch(error => console.log(error))
+
+ 
+
+ 
