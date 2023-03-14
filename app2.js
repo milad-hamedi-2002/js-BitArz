@@ -6,11 +6,25 @@ const sendRequest = async function(url){
   
   const data = await response.json();
   console.log(data)
-  
 
 }
+/* const findProducts = function(cart,productTitle){
+  const indexvalue =cart.findIndex(function(item,index){
+      return item.title===productTitle
+  })
+  return cart[indexvalue]
+}
+const result = findProducts(cartItem,'book3')
 
-
+console.log(result) */
+const findCoin = function(coin,coinName){
+  const indexvalue = coin.findIndx(function(item,index){
+    return item.name.toLowerCase()===coinName.toLowerCase()
+  })
+  return coin[indexvalue]
+}
+const result1 =findCoin(data,'bitcoin') 
+console.log(result1)
 
 
 

@@ -3,6 +3,32 @@ html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+#header{
+    background-color: #eafad8;
+}
+#body{
+    background-color: paleturquoise;
+}
+#footer{
+    background-color:white;
+}
+
+#footer_p{
+    color: black;
+    display: block;
+    
+}
+
+#footer_img{
+    display: inline-block;
+    border-radius: 150px;
+}
+#footer_cmc{
+    border-radius: 50px;
+}
+
+
+
 table{
     border-collapse: collapse;
     text-align: center;

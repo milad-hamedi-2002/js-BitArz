@@ -1,9 +1,25 @@
-const itemShop = ['book1','book2' ,'book3' ,'book4' ]
-let userName = 'mmm'
-if(itemShop.indexOf(userName)===-1){
-    console.log(`oh sory ...!\n mr ${userName} is not sign up this site`)
-}else{
-    console.log(`wellcome mr ${userName}`)
-}
+const cartItem = [
+    {
+        title:'book1',
+        price:29
+    },
+    {
+        title:'book2',
+        price:39
+    },
+    {
+        title:'book3',
+        price:49
+    }]
+
+    const findProducts = function(cart,productTitle){
+        const indexvalue =cart.findIndex(function(item,index){
+            return item.title===productTitle
+        })
+        return cart[indexvalue]
+    }
+    const result = findProducts(cartItem,'book3')
+
+    console.log(result)
 
 
